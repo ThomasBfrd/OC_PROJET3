@@ -1019,6 +1019,13 @@ template {
   width: 100%;
   padding-bottom: 30px;
 }
+.restaurants a, .container .restaurants a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
 .restaurants__Title {
   align-self: flex-start;
 }
@@ -1032,13 +1039,6 @@ template {
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-.restaurants__Card a {
-  text-decoration: none;
-  color: black;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 .restaurants__Card--new {
   position: absolute;
