@@ -1,36 +1,26 @@
 .like {
   position: relative;
-  padding-right: 30px;
+  padding-right: 15px;
+  cursor: pointer;
+  font-size: 24px;
 
-  .hidden-checkbox,
-  .fa-solid {
+  .likeFill {
     display: none;
   }
 
-  .fa-regular {
-    color: black;
-  }
-
-  label {
-    position: relative;
-    font-size: 24px;
-    cursor: pointer;
-
-    .fa-regular {
-      transition: color 0.3s;
-    }
-  }
-
-  .hidden-checkbox:checked + label .fa-regular {
-    color: transparent;
+  &:hover .likeEmpty {
     display: none;
   }
 
-  .hidden-checkbox:checked + label .fa-solid {
+  &:hover .likeFill {
     display: block;
     background: -webkit-linear-gradient(#ff79da, #9356dc);
     background-clip: border-box;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .likeEmpty .fa-regular {
+    color: black;
   }
 }

@@ -533,35 +533,25 @@ template {
 }
 .like, .restaurants__Card .cardLike, .menu-plats__content--title .restaurantLike {
   position: relative;
-  padding-right: 30px;
-}
-.like .hidden-checkbox, .restaurants__Card .cardLike .hidden-checkbox, .menu-plats__content--title .restaurantLike .hidden-checkbox,
-.like .fa-solid,
-.restaurants__Card .cardLike .fa-solid,
-.menu-plats__content--title .restaurantLike .fa-solid {
-  display: none;
-}
-.like .fa-regular, .restaurants__Card .cardLike .fa-regular, .menu-plats__content--title .restaurantLike .fa-regular {
-  color: black;
-}
-.like label, .restaurants__Card .cardLike label, .menu-plats__content--title .restaurantLike label {
-  position: relative;
-  font-size: 24px;
+  padding-right: 15px;
   cursor: pointer;
+  font-size: 24px;
 }
-.like label .fa-regular, .restaurants__Card .cardLike label .fa-regular, .menu-plats__content--title .restaurantLike label .fa-regular {
-  transition: color 0.3s;
-}
-.like .hidden-checkbox:checked + label .fa-regular, .restaurants__Card .cardLike .hidden-checkbox:checked + label .fa-regular, .menu-plats__content--title .restaurantLike .hidden-checkbox:checked + label .fa-regular {
-  color: transparent;
+.like .likeFill, .restaurants__Card .cardLike .likeFill, .menu-plats__content--title .restaurantLike .likeFill {
   display: none;
 }
-.like .hidden-checkbox:checked + label .fa-solid, .restaurants__Card .cardLike .hidden-checkbox:checked + label .fa-solid, .menu-plats__content--title .restaurantLike .hidden-checkbox:checked + label .fa-solid {
+.like:hover .likeEmpty, .restaurants__Card .cardLike:hover .likeEmpty, .menu-plats__content--title .restaurantLike:hover .likeEmpty {
+  display: none;
+}
+.like:hover .likeFill, .restaurants__Card .cardLike:hover .likeFill, .menu-plats__content--title .restaurantLike:hover .likeFill {
   display: block;
   background: -webkit-linear-gradient(#ff79da, #9356dc);
   background-clip: border-box;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.like .likeEmpty .fa-regular, .restaurants__Card .cardLike .likeEmpty .fa-regular, .menu-plats__content--title .restaurantLike .likeEmpty .fa-regular {
+  color: black;
 }
 
 .container {
