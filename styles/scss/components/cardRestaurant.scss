@@ -10,19 +10,14 @@
     padding-bottom: 30px;
   }
 
-  & a {
-    text-decoration: none;
-    color: black;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-  }
+  
 
   &__Title {
     align-self: flex-start;
   }
 
   &__Card {
+
     width: 100%;
     height: 250px;
     position: relative;
@@ -32,6 +27,14 @@
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba($color: #000000, $alpha: 0.1);
+
+    & a {
+      text-decoration: none;
+      color: black;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
 
     &--new {
       position: absolute;
@@ -48,6 +51,7 @@
 
     &--img {
       overflow: hidden;
+      height: 175px;
       width: 100%;
 
       & img {
@@ -65,16 +69,22 @@
 
       & .francaise {
         height: 100%;
-        object-position: 50% 110%;
+        object-position: 50% 70%;
       }
 
       & .delice {
         height: 100%;
+        object-position: 50% 70%;
+      }
+
+      & .gout {
+        height: 100%;
+        object-position: 50% 60%;
       }
     }
 
     &--informations {
-      height: 30%;
+      height: 75px;
       width: 100%;
       padding: 10px 0;
       display: flex;
