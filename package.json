@@ -1,0 +1,15 @@
+{
+  "name": "projet_3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass styles/scss/style.scss styles/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "normalize-scss": "^7.0.1",
+    "sass": "^1.69.4"
+  }
+}

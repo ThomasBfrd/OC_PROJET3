@@ -1,0 +1,174 @@
+.restaurants {
+  background-color: var(--bk);
+  padding: 30px 30px;
+
+  &__CardList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  & a {
+    text-decoration: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  &__Title {
+    align-self: flex-start;
+  }
+
+  &__Card {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba($color: #000000, $alpha: 0.1);
+
+    &--new {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      background-color: var(--green);
+      color: var(--dark-green);
+      box-shadow: 0 2px 4px rgba($color: black, $alpha: 0.15);
+      border-radius: 2px;
+      padding: 5px 10px;
+      font-weight: 500;
+      font-size: 0.88rem;
+    }
+
+    &--img {
+      overflow: hidden;
+      width: 100%;
+
+      & img {
+        width: 100%;
+        max-width: 768px;
+        max-height: 230px;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      & .enchante {
+        height: 100%;
+        object-position: 50% 60%;
+      }
+
+      & .francaise {
+        height: 100%;
+        object-position: 50% 110%;
+      }
+
+      & .delice {
+        height: 100%;
+      }
+    }
+
+    &--informations {
+      height: 30%;
+      width: 100%;
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      align-items: center;
+    }
+
+    & .informationsTextes {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: center;
+      width: 100%;
+      padding-left: 15px;
+
+      &__title {
+        font-size: 1.12rem;
+      }
+
+      &__lieu {
+        font-size: 1.05rem;
+      }
+    }
+
+    & .cardLike {
+      @extend .like;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurants {
+    &__CardList {
+      padding: 0 40px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    &__Title {
+      align-self: flex-start;
+      margin-bottom: 10px;
+      padding: 0 40px;
+    }
+
+    &__Card {
+      &--img {
+        & img {
+          object-position: 50% 60%;
+        }
+
+        & .enchante {
+          object-position: 50% 58%;
+        }
+
+        & .francaise {
+          object-position: 50% 70%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .restaurants {
+    &__Title {
+      max-width: 1050px;
+      width: 100%;
+      align-self: center;
+      margin-bottom: 10px;
+    }
+
+    &__CardList {
+      max-width: 1050px;
+      width: 100%;
+    }
+
+    &__Card {
+      &--img {
+        & img {
+          object-position: 50% 60%;
+        }
+
+        & .enchante {
+          object-position: 50% 58%;
+        }
+
+        & .francaise {
+          object-position: 50% 80%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1232 @@
+/*! normalize-scss | MIT/GPLv2 License | bit.ly/normalize-scss */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=REM:wght@100;200;300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+figcaption,
+figure {
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button; /* 2 */
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  /**
+   * Remove the inner border and padding in Firefox.
+   */
+  /**
+   * Restore the focus styles unset by the previous rule.
+   */
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Show the overflow in Edge.
+ */
+input {
+  overflow: visible;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type=search] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+  /**
+   * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+   */
+}
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  color: inherit; /* 2 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/*
+ * Add the correct display in IE 9-.
+ */
+menu {
+  display: block;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+* {
+  font-family: "Roboto", "Shrikhand", "Inter", sans-serif;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+}
+.header__top {
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+  object-fit: cover;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.header__top .logo {
+  height: 35px;
+}
+.header__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--light-grey);
+  height: 50px;
+  padding: 40px 0;
+  color: var(--grey);
+}
+.header__bottom i {
+  font-size: 1.2rem;
+}
+.header__bottom p {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.footer, .container .footer {
+  background-color: var(--grey);
+  padding: 25px 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer__img {
+  width: 135px;
+}
+.footer__img img {
+  width: 100%;
+  -webkit-filter: grayscale(100%) brightness(100);
+  filter: grayscale(100%) brightness(100);
+}
+.footer__menu {
+  width: 100%;
+}
+.footer__menu ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  list-style: none;
+  gap: 10px;
+}
+.footer__menu ul li {
+  font-weight: 300;
+  font-size: 1rem;
+}
+.footer__menu ul li span {
+  font-size: 0.8rem;
+  padding-right: 5px;
+}
+.footer__menu ul .bold {
+  font-weight: 500;
+}
+.footer__menu ul li a {
+  text-decoration: none;
+  color: var(--light-grey);
+}
+
+@media only screen and (min-width: 768px) {
+  .footer, .container .footer {
+    padding: 0px 15px;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 30px;
+    width: 100%;
+  }
+  .footer__menu {
+    margin-top: 30px;
+    width: 100%;
+  }
+  .footer__menu ul {
+    padding-top: 30px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .footer__menu ul .bold:not(:first-child) {
+    margin-right: 30px;
+  }
+  .footer__img {
+    margin-top: 30px;
+    padding: 30px 15px;
+    width: 135px;
+  }
+  .footer__img img {
+    width: 100%;
+  }
+}
+.like, .restaurants__Card .cardLike, .menu-plats__content--title .restaurantLike {
+  position: relative;
+  padding-right: 30px;
+}
+.like .hidden-checkbox, .restaurants__Card .cardLike .hidden-checkbox, .menu-plats__content--title .restaurantLike .hidden-checkbox,
+.like .fa-solid,
+.restaurants__Card .cardLike .fa-solid,
+.menu-plats__content--title .restaurantLike .fa-solid {
+  display: none;
+}
+.like .fa-regular, .restaurants__Card .cardLike .fa-regular, .menu-plats__content--title .restaurantLike .fa-regular {
+  color: black;
+}
+.like label, .restaurants__Card .cardLike label, .menu-plats__content--title .restaurantLike label {
+  position: relative;
+  font-size: 24px;
+  cursor: pointer;
+}
+.like label .fa-regular, .restaurants__Card .cardLike label .fa-regular, .menu-plats__content--title .restaurantLike label .fa-regular {
+  transition: color 0.3s;
+}
+.like .hidden-checkbox:checked + label .fa-regular, .restaurants__Card .cardLike .hidden-checkbox:checked + label .fa-regular, .menu-plats__content--title .restaurantLike .hidden-checkbox:checked + label .fa-regular {
+  color: transparent;
+  display: none;
+}
+.like .hidden-checkbox:checked + label .fa-solid, .restaurants__Card .cardLike .hidden-checkbox:checked + label .fa-solid, .menu-plats__content--title .restaurantLike .hidden-checkbox:checked + label .fa-solid {
+  display: block;
+  background: -webkit-linear-gradient(#ff79da, #9356dc);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  width: 100%;
+}
+.container .presentation {
+  font-family: "Roboto";
+  text-align: center;
+  padding: 50px 0px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--bk);
+}
+.container .presentation h1, .container .presentation h2 {
+  width: 95%;
+  margin: 0 auto;
+}
+.container .presentation h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  line-height: 2rem;
+}
+.container .presentation h2 {
+  font-weight: 400;
+  color: var(--grey);
+  font-size: 1.1rem;
+}
+.container .presentation .btnCta {
+  background: var(--gradientCta);
+  font-family: "Roboto", sans-serif;
+  border-radius: 50px;
+  padding: 20px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  word-break: break-all;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+.container .presentation .btnCta:hover {
+  background: var(--gradientCtaHover);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+.container .section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+@media only screen and (min-width: 768px) {
+  .section {
+    padding: 30px 15px !important;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .section {
+    margin: 0 auto;
+  }
+}
+.container {
+  width: 100%;
+}
+.container .header .header__top a {
+  border-style: none;
+  text-decoration: none;
+  color: black;
+  position: absolute;
+  left: 5%;
+}
+.container .header .header__top a span .arrow {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.container .section {
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.container .menu-plats {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.menu-plats__header {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+}
+.menu-plats__header--img {
+  overflow: hidden;
+  height: 275px;
+  width: 100%;
+}
+.menu-plats__header--img img {
+  overflow: hidden;
+  object-fit: cover;
+  max-width: 768px;
+  max-height: 380px;
+  height: 100%;
+  width: 100%;
+}
+.menu-plats__header--img .francaise-img {
+  object-position: 65% 80%;
+}
+.menu-plats__header--img .delice-img {
+  object-position: 65% 50%;
+}
+.menu-plats__header--img .gout-img {
+  object-position: 50% 60%;
+}
+.menu-plats__header--img .enchante-img {
+  object-position: 50% 50%;
+}
+.menu-plats__content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+  margin-top: 220px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 20px 20px;
+  background-color: var(--bk);
+}
+.menu-plats__content--title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-plats__content--title h1 {
+  font-family: "Shrikhand";
+  font-size: 1.5rem;
+  text-align: center;
+  width: 250px;
+}
+.menu-plats__content--title .restaurantLike {
+  padding-left: 20px;
+}
+.menu-plats__content--title .restaurantLike label i {
+  font-size: 1.6rem;
+}
+.menu-plats__content .typePlat {
+  font-weight: 300;
+  font-size: 0.9rem;
+  position: relative;
+  margin: 15px 0;
+}
+.menu-plats__content .typePlat::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  background-color: var(--green);
+  border: 1px solid var(--green);
+  width: 8%;
+  height: 1.7px;
+}
+.menu-plats__content--listePlats {
+  display: flex;
+  flex-direction: column;
+}
+.menu-plats__content--listePlats .plat {
+  overflow: hidden;
+  position: relative;
+  background-color: white;
+  border-radius: 15px;
+  padding: 15px;
+  margin: 8px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  max-width: 768px;
+}
+.menu-plats__content--listePlats .plat__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  transition: width 0.25s ease-in-out;
+}
+.menu-plats__content--listePlats .plat__title h2 {
+  font-size: 1rem;
+}
+.menu-plats__content--listePlats .plat__infos {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  transition: width 0.25s ease-in-out;
+}
+.menu-plats__content--listePlats .plat__infos--description {
+  font-weight: 300;
+  font-size: 0.84rem;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-plats__content--listePlats .plat__infos--prix {
+  font-size: 0.9rem;
+  text-align: end;
+  width: 10%;
+  transition: width 0.25s ease-in-out;
+}
+.menu-plats__content--listePlats .plat:hover .plat__infos,
+.menu-plats__content--listePlats .plat:hover .plat__title {
+  width: 85%;
+}
+.menu-plats__content--listePlats .plat:hover .plat__infos--prix {
+  width: 25%;
+}
+.menu-plats__content--listePlats .plat:hover .selection {
+  right: 0;
+}
+.menu-plats__content--listePlats .selection {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  position: absolute;
+  right: -50px;
+  top: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding-left: 50px;
+  height: 100%;
+  background-color: var(--green);
+  color: white;
+  transition: right 0.25s ease-in-out;
+}
+.menu-plats__content--listePlats .selection i {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+}
+.menu-plats__content .btnCta {
+  background: var(--gradientCta);
+  font-family: "Roboto", sans-serif;
+  border-radius: 50px;
+  padding: 20px 25px;
+  font-size: 1rem;
+  font-weight: 500;
+  word-break: break-all;
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  width: 50%;
+  margin: 15px auto;
+}
+.menu-plats__content .btnCta:hover {
+  background: var(--gradientCtaHover);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-plats, .container .menu-plats {
+    padding: 0 0px;
+  }
+  .menu-plats__header {
+    width: 100%;
+  }
+  .menu-plats__header--img {
+    height: 380px;
+  }
+  .menu-plats__header--img img {
+    max-width: 1024px;
+    max-height: 380px;
+    height: 100%;
+  }
+  .menu-plats__header--img .francaise-img {
+    object-position: 65% 60%;
+  }
+  .menu-plats__header--img .delice-img {
+    object-position: 65% 85%;
+  }
+  .menu-plats__header--img .gout-img {
+    object-position: 50% 60%;
+  }
+  .menu-plats__header--img .enchante-img {
+    object-position: 50% 60%;
+  }
+  .menu-plats__content {
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 330px;
+    padding: 40px 90px;
+  }
+  .menu-plats__content--title h1 {
+    width: 250px;
+  }
+  .menu-plats__content--title .restaurantLike {
+    padding-left: 20px;
+  }
+  .menu-plats__content--listePlats {
+    width: 100%;
+    max-width: 630px;
+    margin: 0 auto;
+  }
+  .menu-plats__content .plat:hover .plat__infos,
+  .menu-plats__content .plat:hover .plat__title {
+    width: 88%;
+  }
+  .menu-plats__content .plat:hover .plat__infos--prix {
+    width: 25%;
+  }
+  .menu-plats__content .plat:hover .selection {
+    right: 0;
+  }
+  .menu-plats .btnCta {
+    width: 185px;
+    margin-top: 40px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .menu-plats__header {
+    width: 100%;
+  }
+  .menu-plats__header--img {
+    height: 380px;
+  }
+  .menu-plats__header--img img {
+    max-width: 100vw;
+    max-height: 380px;
+    height: 100%;
+  }
+  .menu-plats__header--img .francaise-img {
+    object-position: 65% 70%;
+  }
+  .menu-plats__header--img .delice-img {
+    object-position: 65% 80%;
+  }
+  .menu-plats__header--img .gout-img {
+    object-position: 50% 60%;
+  }
+  .menu-plats__header--img .enchante-img {
+    object-position: 50% 60%;
+  }
+  .menu-plats__content {
+    max-width: 1024px;
+  }
+  .menu-plats__content--title h1 {
+    width: 250px;
+  }
+  .menu-plats__content--listePlats {
+    min-width: 630px;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .menu-plats__content .plat:hover .plat__infos,
+  .menu-plats__content .plat:hover .plat__title {
+    width: 92%;
+  }
+  .menu-plats__content .plat:hover .plat__infos--prix {
+    width: 25%;
+  }
+}
+:root {
+  --green: #99E2D0;
+  --dark-green: #008766;
+  --blue-sky: #89C8FA;
+  --dark-blue: #003A68;
+  --purple: #9356DC;
+  --grey: #353535;
+  --grey-icons: #7E7E7E;
+  --light-grey: #EAEAEA;
+  --bk: #F6F6F6;
+  --gradientCta: linear-gradient(#FF79DA, #9356DC);
+  --gradientCtaHover: linear-gradient(#E685E0, #AE73E0);
+}
+
+.fonctionnement, .container .fonctionnement {
+  padding: 30px 30px;
+}
+.fonctionnement__CardList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 95%;
+}
+.fonctionnement__Title {
+  align-self: flex-start;
+}
+.fonctionnement__Card {
+  background-color: var(--bk);
+  width: 335px;
+  margin: 0 auto;
+  border-radius: 30px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+}
+.fonctionnement__Card--number {
+  background-color: var(--purple);
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: absolute;
+  left: -12px;
+}
+.fonctionnement__Card--icon {
+  width: 0%;
+  font-size: 1.3rem;
+  color: var(--grey-icons);
+  margin: 0 35px;
+}
+.fonctionnement__Card--icon:hover {
+  color: var(--purple);
+}
+.fonctionnement__Card--text {
+  padding-left: 10px;
+  width: 100%;
+  text-align: start;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .fonctionnement__CardList {
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 100%;
+  }
+  .fonctionnement__Title {
+    padding: 0 40px;
+  }
+  .fonctionnement__Card {
+    width: 33.3333333333%;
+    padding-right: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .fonctionnement, .container .fonctionnement {
+    max-width: 1050px;
+  }
+}
+.restaurants, .container .restaurants {
+  background-color: var(--bk);
+  padding: 30px 30px;
+}
+.restaurants__CardList {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.restaurants a, .container .restaurants a {
+  text-decoration: none;
+  color: black;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.restaurants__Title {
+  align-self: flex-start;
+}
+.restaurants__Card {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.restaurants__Card--new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: var(--green);
+  color: var(--dark-green);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 5px 10px;
+  font-weight: 500;
+  font-size: 0.88rem;
+}
+.restaurants__Card--img {
+  overflow: hidden;
+  width: 100%;
+}
+.restaurants__Card--img img {
+  width: 100%;
+  max-width: 768px;
+  max-height: 230px;
+  height: 100%;
+  object-fit: cover;
+}
+.restaurants__Card--img .enchante {
+  height: 100%;
+  object-position: 50% 60%;
+}
+.restaurants__Card--img .francaise {
+  height: 100%;
+  object-position: 50% 110%;
+}
+.restaurants__Card--img .delice {
+  height: 100%;
+}
+.restaurants__Card--informations {
+  height: 30%;
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: center;
+}
+.restaurants__Card .informationsTextes {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  width: 100%;
+  padding-left: 15px;
+}
+.restaurants__Card .informationsTextes__title {
+  font-size: 1.12rem;
+}
+.restaurants__Card .informationsTextes__lieu {
+  font-size: 1.05rem;
+}
+@media only screen and (min-width: 768px) {
+  .restaurants__CardList {
+    padding: 0 40px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    grid-template-rows: 1fr 1fr;
+  }
+  .restaurants__Title {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    padding: 0 40px;
+  }
+  .restaurants__Card--img img {
+    object-position: 50% 60%;
+  }
+  .restaurants__Card--img .enchante {
+    object-position: 50% 58%;
+  }
+  .restaurants__Card--img .francaise {
+    object-position: 50% 70%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .restaurants__Title {
+    max-width: 1050px;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 10px;
+  }
+  .restaurants__CardList {
+    max-width: 1050px;
+    width: 100%;
+  }
+  .restaurants__Card--img img {
+    object-position: 50% 60%;
+  }
+  .restaurants__Card--img .enchante {
+    object-position: 50% 58%;
+  }
+  .restaurants__Card--img .francaise {
+    object-position: 50% 80%;
+  }
+}
+.load {
+  z-index: 3;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 50vh;
+  animation: opacity 2800ms forwards;
+}
+.load__bar {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 2.5rem;
+  animation: bars 1000ms cubic-bezier(1, -0.12, 0.26, 1.23) infinite alternate;
+}
+.load__bar--1 {
+  animation-delay: 50ms;
+}
+.load__bar--2 {
+  animation-delay: 100ms;
+}
+.load__bar--3 {
+  animation-delay: 150ms;
+}
+.load__bar--4 {
+  animation-delay: 200ms;
+}
+.load__bar--5 {
+  animation-delay: 250ms;
+}
+.load__bar--6 {
+  animation-delay: 300ms;
+}
+.load__bar--7 {
+  animation-delay: 350ms;
+}
+.load__bar--8 {
+  animation-delay: 400ms;
+}
+
+@keyframes bars {
+  from {
+    transform: translateY(0px) rotateX(0deg);
+  }
+  to {
+    transform: translateY(10px) rotateX(-45deg);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+body {
+  position: relative;
+}
+
+/*# sourceMappingURL=style.css.map */
